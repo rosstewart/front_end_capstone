@@ -1,0 +1,19 @@
+/* nav {
+    width: 860px;
+    height: 80px;
+    background-color: lightgray;
+    justify-content: center;
+    display: flex;
+} */
+
+#logo {
+    width: 201px;
+    height: 54px;
+    /* flex-shrink: 0; */
+}
+
+.navText {
+    font-family: Karla;
+    font-size: 20px;
+    font-weight: 500;
+  }
