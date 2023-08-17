@@ -1,10 +1,201 @@
-.App {
+/* .App {
   text-align: center;
+} */
+
+.displayText {
+  font-family: 'Markarzi';
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
-.navText {
-  color: #000;
+.subTitleText {
+  font-family: Markazi Text;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.leadText {
   font-family: Karla;
-  font-size: 50px;
+  font-size: 18px;
+  font-style: normal;
   font-weight: 500;
+  line-height: normal;
+}
+
+.buttonText {
+  font-family: Karla;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cardTitleText {
+  font-family: Markazi Text;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 90%; /* 21.6px */
+}
+
+.cardBodyText {
+  color: #495E57;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.orderADeliveryText {
+  color: #333;
+  /* Nav_Link */
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#thisWeeksSpecialsText {
+  font-family: Markazi Text;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#testimonialsText {
+  color: #333;
+
+  /* H1 */
+  font-family: Markazi Text;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.testimonialCardTitleText {
+  font-family: Karla;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.testimonialReviewText {
+  font-family: Karla;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.aboutText {
+  width: 370px;
+  height: 322px;
+  text-align: justify;
+  font-family: Karla;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.footerTitleText {
+  color: #495E57;
+  font-family: Karla;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.footerText {
+  color: #333;
+  font-family: Karla;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 26px */
+}
+
+.yellowText {
+  color: #F4CE14;
+}
+
+.yellowBackground {
+  background-color: #F4CE14;
+}
+
+.greenText {
+  color: #495E57;
+}
+
+.greenBackground {
+  background-color: #495E57;
+}
+
+.lightGrayBackground {
+  background-color: #EDEFEE;
+}
+
+.whiteText {
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 992px) {
+  /* Large screens */
+  #headerGrid {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+      '. . a a a a b b b b . .';
+      /* 'c c c c c c c d d d d d'; */
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* Medium screens */
+  #headerGrid {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+      '. a a a b b b .';
+      /* 'b b b b b b b b'
+      'c c c c c c c c'
+      'd d d d d d d d'; */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* Small screens */
+  #headerGrid {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      '. a a a a .'
+      '. b b b b .';
+      /* 'c c c c c c'
+      'd d d d d d'; */
+  }
+}
+
+#headerTitles {
+  display: grid;
+  grid-area: a;
+}
+
+#headerPhoto {
+  display: grid;
+  grid-area: b;
+  justify-content: right;
 }
