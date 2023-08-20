@@ -149,6 +149,7 @@ function Nav() {
             <Box
                 backgroundColor="#FFFFFF"
                 position="fixed"
+                zIndex={2}
                 top={0}
                 left={0}
                 right={0}
@@ -173,7 +174,7 @@ function Nav() {
                         </a>
                     </Box>
                     <Box display={{ base: "none", md: "block" }}>
-                        <HStack spacing="1em">
+                        <HStack spacing="1em" style={{ textDecoration: "underline", textDecorationThickness: "0.5px" }} >
                             <a href="/" className="menu-link">Home</a>
                             <a href="/" className="menu-link">About</a>
                             <a href="/" className="menu-link">Menu</a>
@@ -203,7 +204,7 @@ function Nav() {
                     pr={isOpen ? 4 : 0}
                     transform={isOpen ? "translateX(0)" : "translateX(-100%)"}
                     transition=".3s transform"
-                    zIndex={1}
+                    zIndex={2}
                 >
                     <IconButton
                         display={{ base: isOpen ? "block" : "none", md: "none" }}

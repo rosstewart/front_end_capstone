@@ -1,0 +1,80 @@
+
+@media screen and (min-width: 1001px) {
+    /* Large screens */
+    #aboutGrid {
+      width: 100vw;
+      display: grid;
+      grid-template-columns: 1fr repeat(10, 104.25px) 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+        '. . a a a a b b b b . .';
+    }
+    .aboutPhoto {
+        width: 276px;
+        height: 338px;
+        border-radius: 16px;
+        display: flex;
+        object-fit: cover;
+    }
+    #aboutPhoto1 {
+        left: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+    #aboutPhoto2 {
+        margin-top: -107px;
+        margin-left: -101px;
+        z-index: 1;
+    }
+    #aboutPhotoContainer {
+      grid-area: b;
+      justify-content: right;
+      min-width: 447px;
+      /* height: 445px; */
+      height: 338px;
+      margin-top: 107px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    /* Small screens */
+    #aboutGrid {
+      width: 100vw;
+      display: grid;
+      grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+      grid-template-areas:
+        '. a a a a .'
+        '. b b b b .';
+    }
+    .aboutPhoto {
+      width: 184px;
+      height: 225px;
+      border-radius: 12px;
+      display: flex;
+      object-fit: cover;
+    }
+    #aboutPhoto1 {
+      z-index: 0;
+      left: 0;
+      bottom: 0;
+    }
+    #aboutPhoto2 {
+      z-index: 1;
+      margin-top: -71px;
+      margin-left: -67px;
+    }
+    #aboutPhotoContainer {
+      grid-area: b;
+      min-width: 298px;
+      /* height: 297px; */
+      height: 226px;
+      /* padding-top: 20px; */
+      margin-top: 91px;
+    }
+  }
+
+  #aboutTitles {
+    grid-area: a;
+    margin-right: 49.24px;
+    max-width: 300px;
+  }

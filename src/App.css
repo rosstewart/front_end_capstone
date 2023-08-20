@@ -11,8 +11,8 @@
 }
 
 .subTitleText {
-  font-family: Markazi Text;
-  font-size: 40px;
+  font-family: 'Markarzi';
+  font-size: 50px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -35,11 +35,13 @@
 }
 
 .cardTitleText {
-  font-family: Markazi Text;
+  font-family: 'Markazi';
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: 90%; /* 21.6px */
+  overflow: hidden;
+  max-height: 100%;
 }
 
 .cardBodyText {
@@ -49,11 +51,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  overflow: hidden;
+  max-height: 100%;
 }
 
 .orderADeliveryText {
   color: #333;
-  /* Nav_Link */
   font-family: Karla;
   font-size: 16px;
   font-style: normal;
@@ -62,7 +65,7 @@
 }
 
 #thisWeeksSpecialsText {
-  font-family: Markazi Text;
+  font-family: 'Markazi';
   font-size: 50px;
   font-style: normal;
   font-weight: 500;
@@ -72,12 +75,13 @@
 #testimonialsText {
   color: #333;
 
-  /* H1 */
-  font-family: Markazi Text;
+  /* H2 */
+  font-family: 'Markazi';
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  text-align: center;
 }
 
 .testimonialCardTitleText {
@@ -86,6 +90,9 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: normal;
 }
 
 .testimonialReviewText {
@@ -94,6 +101,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  max-height: 100%;
 }
 
 .aboutText {
@@ -116,13 +127,26 @@
   line-height: normal;
 }
 
-.footerText {
+a.footerText {
   color: #333;
   font-family: Karla;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 130%; /* 26px */
+  display: block;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px ;
+}
+
+.priceText {
+  color: #EE9972;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap;
 }
 
 .yellowText {
@@ -145,57 +169,20 @@
   background-color: #EDEFEE;
 }
 
+.grayBackground {
+  background-color: #D9D9D9;
+}
+
 .whiteText {
   color: #FFFFFF;
 }
 
-@media screen and (min-width: 992px) {
-  /* Large screens */
-  #headerGrid {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-areas:
-      '. . a a a a b b b b . .';
-      /* 'c c c c c c c d d d d d'; */
-  }
+.specialsImage {
+  width: 264.667px;
+  height: 185.258px;
+  object-fit: cover;
 }
 
-@media screen and (max-width: 991px) {
-  /* Medium screens */
-  #headerGrid {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-areas:
-      '. a a a b b b .';
-      /* 'b b b b b b b b'
-      'c c c c c c c c'
-      'd d d d d d d d'; */
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* Small screens */
-  #headerGrid {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas:
-      '. a a a a .'
-      '. b b b b .';
-      /* 'c c c c c c'
-      'd d d d d d'; */
-  }
-}
-
-#headerTitles {
-  display: grid;
-  grid-area: a;
-}
-
-#headerPhoto {
-  display: grid;
-  grid-area: b;
-  justify-content: right;
+a {
+  text-decoration: underline;
 }

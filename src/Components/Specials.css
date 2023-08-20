@@ -1,0 +1,59 @@
+@media screen and (min-width: 1001px) {
+    /* Large screens */
+    #specialsGrid {
+      overflow: hidden;
+      width: 100vw;
+      display: grid;
+      grid-template-columns: 1fr repeat(10, 104.25px) 1fr;
+      /* grid-template-rows: 1fr; */
+      grid-template-areas:
+        '. . aa aa aa aa aa aa bb bb . .'
+        '. . cc cc cc cc cc cc cc cc . .';
+        /* 'c c c c c c c d d d d d'; */
+    }
+    #onlineMenu {
+      display: grid;
+      grid-area: bb;
+      justify-content: right;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    /* Small screens */
+    #specialsGrid {
+      margin-top: 30px;
+      width: 100vw;
+      display: grid;
+      grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+      grid-template-areas:
+        '. aa aa aa aa .'
+        '. bb bb bb bb .'
+        '. cc cc cc cc .';
+    }
+    #onlineMenu {
+      grid-area: bb;
+      justify-content: right;
+      padding-top: 20px;
+    }
+  }
+  #specialsTitle {
+    grid-area: aa;
+    padding-right: 20px;
+    align-self: center;
+  }
+
+  #specialsCards {
+    grid-area: cc;
+  }
+
+  @media screen and (max-width: 444px) {
+    #specialsContainer {
+      margin-top: 90px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) and (min-width: 445px) {
+    #specialsContainer {
+      margin-top: 20px;
+    }
+  }

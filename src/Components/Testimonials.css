@@ -1,0 +1,36 @@
+@media screen and (min-width: 1001px) {
+    /* Large screens */
+    #testimonialsGrid {
+      width: 100vw;
+      display: grid;
+      grid-template-columns: 1fr repeat(10, 104.25px) 1fr;
+      grid-template-areas:
+        '. . tt tt tt tt tt tt tt tt . .'
+        '. . tc tc tc tc tc tc tc tc . .';
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    /* Small screens */
+    #testimonialsGrid {
+      width: 100vw;
+      display: grid;
+      grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+      grid-template-areas:
+        '. tt tt tt tt .'
+        '. tc tc tc tc .';
+    }
+  }
+
+  #testimonialsText {
+    grid-area: tt;
+  }
+
+  #testimonialCards {
+    grid-area: tc;
+  }
+
+  .testimonialImage {
+    width: 46px;
+    height: 46px;
+  }

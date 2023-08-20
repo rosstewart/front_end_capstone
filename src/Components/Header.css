@@ -1,0 +1,90 @@
+
+@media screen and (min-width: 1001px) {
+    /* Large screens */
+    #headerGrid {
+      width: 100vw;
+      display: grid;
+      grid-template-columns:  1fr repeat(10, 104.25px) 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+        '. . a a a a b b b b . .';
+        /* 'c c c c c c c d d d d d'; */
+    }
+    #headerPhoto {
+      width: 375px;
+      height: 443px;
+      border-radius: 16px;
+      position: absolute;
+      z-index: 0;
+      /* justify-content: right; */
+      display: flex;
+    }
+    #headerPhotoContainer {
+      /* display: grid; */
+      grid-area: b;
+      justify-content: right;
+      min-width: 375px;
+      height: 383px;
+    }
+  }
+
+  /* @media screen and (max-width: 991px) { */
+  /* @media screen and (max-width: 1250px) { */
+    /* Medium screens */
+    /* #headerGrid {
+      width: 100vw;
+      display: grid;
+      grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+        '. a a a b b b .'; */
+        /* 'b b b b b b b b'
+        'c c c c c c c c'
+        'd d d d d d d d'; */
+    /* }
+  } */
+
+  @media screen and (max-width: 1000px) {
+    /* Small screens */
+    #headerGrid {
+      width: 100vw;
+      display: grid;
+      grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+      grid-template-areas:
+        '. a a a a .'
+        '. b b b b .';
+        /* 'c c c c c c'
+        'd d d d d d'; */
+    }
+    #headerPhoto {
+      width: 250px;
+      height: 295px;
+      border-radius: 12px;
+      position: absolute;
+      z-index: 0;
+      /* justify-content: right; */
+      display: flex;
+    }
+    #headerPhotoContainer {
+      /* display: grid; */
+      grid-area: b;
+      /* justify-content: right; */
+      min-width: 250px;
+      height: 275px;
+      padding-top: 20px;
+    }
+    /* #header {
+        height: 672px;
+        background-color: #495E57;
+      } */
+  }
+
+  #headerTitles {
+    grid-area: a;
+    padding-right: 20px;
+  }
+
+  #headerVStack {
+    background-color: #495E57;
+    width: 100vw;
+  }
