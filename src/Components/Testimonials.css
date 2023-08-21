@@ -22,7 +22,7 @@
     }
   }
 
-  #testimonialsText {
+  .testimonialsText {
     grid-area: tt;
   }
 

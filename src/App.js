@@ -5,17 +5,17 @@ import Nav from './Components/Nav';
 import Header from './Components/Header';
 import Main from './Components/Main';
 import Footer from './Components/Footer';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router } from 'react-router-dom';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <ChakraProvider>
-      <div className="App">
+      <Router>
         <Nav className="navText" />
-        <Header />
         <Main />
         <Footer />
-      </div>
+      </Router>
     </ChakraProvider>
   );
 }

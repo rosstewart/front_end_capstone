@@ -1,7 +1,3 @@
-/* .App {
-  text-align: center;
-} */
-
 .displayText {
   font-family: 'Markarzi';
   font-size: 64px;
@@ -72,7 +68,7 @@
   line-height: normal;
 }
 
-#testimonialsText {
+.testimonialsText {
   color: #333;
 
   /* H2 */
@@ -127,7 +123,7 @@
   line-height: normal;
 }
 
-a.footerText {
+button.footerText {
   color: #333;
   font-family: Karla;
   font-size: 20px;
@@ -136,7 +132,7 @@ a.footerText {
   line-height: 130%; /* 26px */
   display: block;
   text-decoration: underline;
-  text-decoration-thickness: 0.5px ;
+  text-decoration-thickness: 0.5px;
 }
 
 .priceText {

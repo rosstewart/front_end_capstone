@@ -107,8 +107,14 @@ import { MdClose } from "react-icons/md";
 import Logo from "../icons_assets/Logo.svg";
 import "./Nav.css";
 import React, { useEffect, useRef } from "react";
+import { useNavigate } from 'react-router-dom';
 
 function Nav() {
+    const navigate = useNavigate();
+    const navigateTo = (path) => {
+        navigate(path);
+        onClose();
+    }
     const previousScrollY = useRef(0);
 
     // const handleClick = (anchor) => () => {
@@ -174,13 +180,13 @@ function Nav() {
                         </a>
                     </Box>
                     <Box display={{ base: "none", md: "block" }}>
-                        <HStack spacing="1em" style={{ textDecoration: "underline", textDecorationThickness: "0.5px" }} >
-                            <a href="/" className="menu-link">Home</a>
-                            <a href="/" className="menu-link">About</a>
-                            <a href="/" className="menu-link">Menu</a>
-                            <a href="/" className="menu-link">Reservations</a>
-                            <a href="/" className="menu-link">Order Online</a>
-                            <a href="/" className="menu-link">Log in</a>
+                        <HStack spacing="1em" style={{ textDecoration: "underline", textDecorationThickness: "0.5px" }}>
+                            <button onClick={() => navigate("/")} className="menu-link">Home</button>
+                            <button className="menu-link">About</button>
+                            <button className="menu-link">Menu</button>
+                            <button onClick={() => navigate("/booking")} className="menu-link">Reservations</button>
+                            <button className="menu-link">Order Online</button>
+                            <button className="menu-link">Log in</button>
                         </HStack>
                     </Box>
                     <IconButton
@@ -216,12 +222,12 @@ function Nav() {
                         variant="ghost"
                         onClick={onClose}
                     />
-                    <Button fontWeight="500" className="menu-link"><a href="/">Home</a></Button>
-                    <Button fontWeight="500" href="/" className="menu-link"><a href="/">About</a></Button>
-                    <Button fontWeight="500" href="/" className="menu-link"><a href="/">Menu</a></Button>
-                    <Button fontWeight="500" href="/" className="menu-link"><a href="/">Reservations</a></Button>
-                    <Button fontWeight="500" href="/" className="menu-link"><a href="/">Order Online</a></Button>
-                    <Button fontWeight="500" href="/" className="menu-link"><a href="/">Log in</a></Button>
+                    <Button fontWeight="500" onClick={() => navigateTo("/")} className="menu-link">Home</Button>
+                    <Button fontWeight="500" className="menu-link">About</Button>
+                    <Button fontWeight="500" className="menu-link">Menu</Button>
+                    <Button fontWeight="500" onClick={() => navigateTo("/booking")} className="menu-link">Reservations</Button>
+                    <Button fontWeight="500" className="menu-link">Order Online</Button>
+                    <Button fontWeight="500" className="menu-link">Log in</Button>
                 </VStack>
             </Box>
         </nav>

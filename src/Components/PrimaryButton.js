@@ -1,12 +1,12 @@
-function PrimaryButton({ text, style }) {
+function PrimaryButton({ onPressed, text, style, props }) {
     return (
-        <button style={{
+        <button aria-label="On Click" onClick={onPressed} style={{
             width: "200px",
             height: "60px",
             borderRadius: "16px",
             border: "none",
             ...style,
-        }} className="yellowBackground buttonText">{text}</button>
+        }} {...props} className="yellowBackground buttonText">{text}</button>
     )
 }
 
