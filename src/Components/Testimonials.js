@@ -1,4 +1,4 @@
-import { VStack, HStack } from "@chakra-ui/react";
+import { HStack } from "@chakra-ui/react";
 import TestimonialCard from "./TestimonialCard.js";
 import "./Testimonials.css";
 

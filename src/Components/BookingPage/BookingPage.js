@@ -85,7 +85,7 @@ function BookingPage(props) {
 
     return (
         <VStack className="greenBackground" minHeight="80vh">
-            <h1 style={{ marginTop: "126px", marginBottom: "30px" }} className="testimonialsText yellowText">Booking Page</h1>
+            <h1 style={{ marginTop: "126px", marginBottom: "30px" }} className="testimonialsText yellowText">Reserve a Table</h1>
             <form onSubmit={handleSubmit} style={{ display: "grid", marginBottom: "50px", maxWidth: "200px" }}>
                 <div className="Field">
                     <label htmlFor="res-date" style={{ overflow: "visible" }} className="cardTitleText whiteText">Choose date <sup>*</sup></label>
